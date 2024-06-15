@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.2)) ,url('images/banner2.png');
+    background-size: cover;
+    font-family:sans-serif;
+    
+}
+
+nav{
+width: 100%;
+height:100px;
+color:aliceblue;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-bottom: 2px solid rgba(255, 255, 255, 0.11);
+
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
+    font-size:  17px;   
+}
+
+.menu a:hover{
+    color: rgb(0, 64, 128);
+}
+
+.gallery{
+    color: rgb(0, 64, 128) !important;
+}
+
+.Log{
+    width: 150px;
+    display: flex;
+    margin-right: 400px;
+    cursor: pointer;
+    
+}
+
+.heading {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    padding-top: 16%;
+    
+}
+
+.container{
+    width: 100%;
+    height: 5700px;
+    background-color: #222831;
+    border-bottom: solid rgba(255, 255, 255, 0.091);
+}
+
+.header{
+    text-align: center;
+    padding: 32px;
+}
+.header h1{
+    font-size: 50px;
+}
+
+.gallery-head{
+    color: aliceblue;
+}
+
+#gallery1{
+    margin-top: 90px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid #222831;
+}
+.img-hover-zoom img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:  transform .5s ease;
+}
+.img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+footer{
+    background-color: #222831;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0a6998e7;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    font-size: 20px;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
